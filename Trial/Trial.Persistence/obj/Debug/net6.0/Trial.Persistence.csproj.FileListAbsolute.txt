@@ -1,0 +1,17 @@
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Persistence.deps.json
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Persistence.runtimeconfig.json
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Persistence.dll
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Persistence.pdb
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Core.dll
+C:\ASP\Trial\Trial\Trial.Persistence\bin\Debug\net6.0\Trial.Core.pdb
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.csproj.AssemblyReference.cache
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.AssemblyInfoInputs.cache
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.AssemblyInfo.cs
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.csproj.CoreCompileInputs.cache
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.csproj.CopyComplete
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.dll
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\refint\Trial.Persistence.dll
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.pdb
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\Trial.Persistence.genruntimeconfig.cache
+C:\ASP\Trial\Trial\Trial.Persistence\obj\Debug\net6.0\ref\Trial.Persistence.dll

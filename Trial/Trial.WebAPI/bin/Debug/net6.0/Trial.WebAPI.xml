@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Trial.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Trial.WebAPI.Controllers.CustomerController.Get(System.Int32)">
+            <summary>
+            Returns a customer.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/customer/1
+            </remarks>
+            <response code="200"> Returns a customer by id </response>
+            <response code="404"> If customer is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.CustomerController.GetAll">
+            <summary>
+            Returns list of all customers.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/customer/
+            </remarks>
+            <response code="200"> Returns all customers </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.CustomerController.Create(Trial.Core.DTO.Customer.CreateCustomerDTO)">
+             <summary>
+             Creates a customer.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/customer/
+            
+                 POST
+                 {
+                    "FullName": "Customer Name",
+                    "Phone": "+7 123 123 1234"
+                 }
+            
+             </remarks>
+             <response code="201"> Returns newly created customer </response>
+             <response code="400"> If customer is null </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.CustomerController.Update(Trial.Core.DTO.Customer.UpdateCustomerDTO)">
+             <summary>
+             Updates a customer.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/customer/
+            
+                 PUT
+                 {
+                    "Id" : 1
+                    "FullName": "Customer Name",
+                    "Phone": "+7 123 123 1234"
+                 }
+            
+             </remarks>
+             <response code="204"> If update is successful </response>
+             <response code="400"> If customer is null </response>
+             <response code="404"> If customer is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.CustomerController.Delete(System.Int32)">
+            <summary>
+            Deletes a customer.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/customer/1
+            </remarks>
+            <response code="204"> If delete is successful </response>
+            <response code="404"> If customer is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderController.Get(System.Int32)">
+            <summary>
+            Returns an order.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/order/1
+            </remarks>
+            <response code="200"> Returns an order by id </response>
+            <response code="404"> If order is not found </response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Trial.WebAPI.Controllers.OrderController.GetAll(Trial.Core.Common.Filtering.OrderFilter)" -->
+        <member name="M:Trial.WebAPI.Controllers.OrderController.Create(Trial.Core.DTO.Order.CreateOrderDTO)">
+             <summary>
+             Creates an order.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/order/
+            
+                 POST
+                 {
+                    "CustomerId" : 1,
+                    "CreatedAt" : "2023-01-01T10:00:00"
+                 }
+            
+             </remarks>
+             <response code="201"> Returns newly created order </response>
+             <response code="400"> If order is null </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderController.Update(Trial.Core.DTO.Order.UpdateOrderDTO)">
+             <summary>
+             Updates an order.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/order/
+            
+                 PUT
+                 {
+                    "Id" : 1,
+                    "CustomerId" : 1,
+                    "CreatedAt": 123
+                 }
+            
+             </remarks>
+             <response code="204"> If update is successful </response>
+             <response code="400"> If order is null </response>
+             <response code="404"> If customer is not found </response>
+             <response code="404"> If order is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderController.Delete(System.Int32)">
+            <summary>
+            Deletes an order.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/order/1
+            </remarks>
+            <response code="204"> If delete is successful </response>
+            <response code="404"> If order is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderDetailsController.Get(System.Int32)">
+            <summary>
+            Returns an order details.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/orderdetails/1
+            </remarks>
+            <response code="200"> Returns an order details by id </response>
+            <response code="404"> If order details is not found </response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Trial.WebAPI.Controllers.OrderDetailsController.GetAll(Trial.Core.Common.Filtering.OrderDetailsFilter)" -->
+        <member name="M:Trial.WebAPI.Controllers.OrderDetailsController.Create(Trial.Core.DTO.OrderDetails.CreateOrderDetailsDTO)">
+             <summary>
+             Creates an order details.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/orderdetails/
+            
+                 POST
+                 {
+                    "OrderId" : 1,
+                    "ProductId" : 1,
+                    "Amount" : 100
+                 }
+            
+             </remarks>
+             <response code="201"> Returns newly created order </response>
+             <response code="400"> If order details is null / requested amount is less than available </response>
+             <response code="404"> If product / order is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderDetailsController.Update(Trial.Core.DTO.OrderDetails.UpdateOrderDetailsDTO)">
+             <summary>
+             Updates an order details.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/orderdetails/
+            
+                 PUT
+                 {
+                    "Id" : 1,
+                    "OrderId" : 1,
+                    "ProductId" : 1,
+                    "Amount": 100
+                 }
+            
+             </remarks>
+             <response code="204"> If update is successful </response>
+             <response code="400"> If order is null / requested amount is less than available </response>
+             <response code="404"> If order / product is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.OrderDetailsController.Delete(System.Int32)">
+            <summary>
+            Deletes an order details.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/orderdetails/1
+            </remarks>
+            <response code="204"> If delete is successful </response>
+            <response code="404"> If orderdetails is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.ProductController.Get(System.Int32)">
+            <summary>
+            Returns a product.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/product/1
+            </remarks>
+            <response code="200"> Returns a product by id </response>
+            <response code="404"> If product is not found </response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Trial.WebAPI.Controllers.ProductController.GetAll(Trial.Core.Common.Filtering.ProductFilter)" -->
+        <member name="M:Trial.WebAPI.Controllers.ProductController.Create(Trial.Core.DTO.Product.CreateProductDTO)">
+             <summary>
+             Creates a product.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/product/
+            
+                 POST
+                 {
+                    "ProductTypeId" : 1,
+                    "Description": "Product Info",
+                    "Price": 100,
+                    "AvailableAmount" : 100
+                 }
+            
+             </remarks>
+             <response code="201"> Returns newly created product </response>
+             <response code="400"> If product is null </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.ProductController.Update(Trial.Core.DTO.Product.UpdateProductDTO)">
+             <summary>
+             Updates a product.
+             </summary>
+             <remarks>
+             Sample request: https://localhost:5000/api/product/
+            
+                 PUT
+                 {
+                    "Id" : 1,
+                    "ProductTypeId" : 1,
+                    "Description": "Product Info",
+                    "Price": 100,
+                    "AvailableAmount" : 100
+                 }
+            
+             </remarks>
+             <response code="204"> If update is successful </response>
+             <response code="400"> If product is null </response>
+             <response code="404"> If product type is not found </response>
+             <response code="404"> If product is not found </response>
+        </member>
+        <member name="M:Trial.WebAPI.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Deletes a product.
+            </summary>
+            <remarks>
+            Sample request: https://localhost:5000/api/product/1
+            </remarks>
+            <response code="204"> If delete is successful </response>
+            <response code="404"> If product is not found </response>
+        </member>
+    </members>
+</doc>

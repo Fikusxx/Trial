@@ -1,0 +1,12 @@
+C:\ASP\Trial\Trial\Trial.Core\bin\Debug\net6.0\Trial.Core.deps.json
+C:\ASP\Trial\Trial\Trial.Core\bin\Debug\net6.0\Trial.Core.dll
+C:\ASP\Trial\Trial\Trial.Core\bin\Debug\net6.0\Trial.Core.pdb
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.csproj.AssemblyReference.cache
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.AssemblyInfoInputs.cache
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.AssemblyInfo.cs
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.csproj.CoreCompileInputs.cache
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.dll
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\refint\Trial.Core.dll
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\Trial.Core.pdb
+C:\ASP\Trial\Trial\Trial.Core\obj\Debug\net6.0\ref\Trial.Core.dll
